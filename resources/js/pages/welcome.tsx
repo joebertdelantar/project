@@ -21,25 +21,12 @@ export default function Welcome() {
                                 Dashboard
                             </Link>
                         ) : (
-                            <>
-                                <Link
-                                    href={route('login')}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        window.location.href = route('login');
-                                    }}
-                                    className="inline-block rounded-sm border border-green-700 bg-green-600 px-5 py-1.5 text-sm leading-normal text-white hover:border-green-800 hover:bg-green-700 dark:border-green-300 dark:bg-green-400 dark:text-[#1C1C1A] dark:hover:border-green-500 dark:hover:bg-green-500"
-                                >
-                                    Log in
-                                </Link>
-
-                                {/* <Link
-                                    href={route('register')}
-                                    className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                                >
-                                    Register
-                                </Link> */}
-                            </>
+                            <Link
+                                href={route('login')}
+                                className="inline-block rounded-sm border border-green-700 bg-green-600 px-5 py-1.5 text-sm leading-normal text-white hover:border-green-800 hover:bg-green-700 dark:border-green-300 dark:bg-green-400 dark:text-[#1C1C1A] dark:hover:border-green-500 dark:hover:bg-green-500"
+                            >
+                                Log in
+                            </Link>
                         )}
                     </nav>
                 </header>
