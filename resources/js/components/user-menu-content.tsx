@@ -6,6 +6,7 @@ import { LogOut } from 'lucide-react';
 
 interface UserMenuContentProps {
     user: User;
+    // sample
 }
 
 export function UserMenuContent({ user }: UserMenuContentProps) {
